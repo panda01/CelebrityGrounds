@@ -1,0 +1,41 @@
+/*
+Default style for WP-PageNavi plugin
+
+http://wordpress.org/extend/plugins/wp-pagenavi/
+*/
+
+.wp-pagenavi 
+{
+	clear: both;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #929292;
+    margin-top: 25px;
+}
+
+.wp-pagenavi a, 
+.wp-pagenavi span 
+{
+	text-decoration: none;
+	padding: 3px 5px;
+	margin: 2px;
+    font-size: 12px;
+    color: #8C1F28;
+}
+
+.wp-pagenavi a.nextpostslink,
+.wp-pagenavi a.previouspostslink
+{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.wp-pagenavi a.nextpostslink            { float: right; }
+.wp-pagenavi a.previouspostslink        { float: left; }
+
+.wp-pagenavi a:hover, 
+.wp-pagenavi span.current {
+    text-decoration: underline;
+}
+
+.wp-pagenavi span.current {
+}
