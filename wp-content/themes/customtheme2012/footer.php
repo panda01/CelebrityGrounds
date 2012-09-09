@@ -13,20 +13,18 @@
 	</div><!-- #main -->
 
 	<footer id="colophon" role="contentinfo" class="wood-bg">
-        <div class="w940">
-
-			<?php
-				/* A sidebar in the footer? Yep. You can can customize
-				 * your footer with three columns of widgets.
-				 */
-				if ( ! is_404() )
-					get_sidebar( 'footer' );
-			?>
-
-			<div id="site-generator">
-				<?php do_action( 'twentyeleven_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyeleven' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a>
-			</div>
+        <div class="w940 oswald xmall c000 uppercase">
+            <div class="fleft">
+                all rights reserved &copy; copyright 2012 celebrity grounds
+            </div>
+            <div class="fright">
+                <?php wp_nav_menu( array( 
+                    'theme_location' => 'primary',
+                    'menu' => 'footer-menu',
+                    'container' => ''
+                ) ); ?>
+            </div>
+            <div class="clr"></div>
         </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

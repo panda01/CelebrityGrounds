@@ -142,14 +142,19 @@ footer, header, hgroup, menu, nav, section {
     font-family: "Lusitana Bold", Helvetica;
     font-weight: bold;
 }
+nav > ul.menu > li > a,
+.uppercase          { text-transform: uppercase; }
+.capitalize         { text-transform: capitalize; }
 
-#main a
+.underline          { text-decoration: underline; }
+
+a
 {
     text-decoration: none;
-    transition: all 250ms ease-in;
-    -webkit-transition: all 250ms ease-in;
-    -moz-transition: all 250ms ease-in;
-    -o-transition: all 250ms ease-in;
+    transition: all 350ms ease;
+    -webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
 }
 
 #main a:hover
@@ -177,53 +182,63 @@ footer, header, hgroup, menu, nav, section {
     line-height: 28px;
 }
 
-#main p,
-.reg,
-.big,
-.xig                { font-family: Arial, sans-serif; }
 
-.big                { font-size: 18px; line-height: 22px; }
-
-#main p,
+p,
 .reg
 {
+    font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 20px;
 }
 
-#main p + p         { margin-top: 5px; }
+.xig                    { font-size: 20px; line-height: 26px; }
+h5,
+.big                    { font-size: 18px; line-height: 22px; }
 
-#main .wp-pagenavi  { font-family: 'Oswald Bold', Helvetica; font-weight: bold; }
+.small                  { font-size: 14px; line-height: 18px; }
+.xmall                  { font-size: 12px; line-height: 16px; }
+
+
+#main p + p             { margin-top: 5px; }
+
+#main .wp-pagenavi      { font-family: 'Oswald Bold', Helvetica; font-weight: bold; }
+
+nav > ul.menu > li > a  { font-family: 'Oswald', Helvetica; }
 
 /* =Color
 ----------------------------------------------- */
 .color-red,
 #main a             { color: #8c1f28; }
 
+.c000               { color: #000; }
+.c333               { color: #333; }
+.c42                { color: #424242; }
 .c666,
 #main p,
 #main a:hover       { color: #666; }
+.c999               { color: #999; }
 
 /* =Spacing
 ----------------------------------------------- */
 #main .mt-5         { margin-top: 5px; }
-#main .mt-10        { margin-top: 5px; }
+#main .mt-10        { margin-top: 10px; }
 #main .mt-15        { margin-top: 15px; }
 #main .mt-20        { margin-top: 20px; }
 
 #main .ml-5         { margin-left: 5px; }
-#main .ml-10        { margin-left: 5px; }
+#main .ml-10        { margin-left: 10px; }
 #main .ml-15        { margin-left: 15px; }
 #main .ml-20        { margin-left: 20px; }
 
 #main .mr-5         { margin-right: 5px; }
-#main .mr-10        { margin-right: 5px; }
+#main .mr-10        { margin-right: 10px; }
 #main .mr-15        { margin-right: 15px; }
 #main .mr-20        { margin-right: 20px; }
-/*
-#main .mt-5         { margin-top: 5px; }
-#main .mt-5         { margin-top: 5px; }
-*/
+
+#main .mb-5         { margin-bottom: 5px; }
+#main .mb-10        { margin-bottom: 10px; }
+#main .mb-15        { margin-bottom: 15px; }
+#main .mb-20        { margin-bottom: 20px; }
 
 /* =Structure
 ----------------------------------------------- */
@@ -235,6 +250,10 @@ footer, header, hgroup, menu, nav, section {
 .d-block        { display: block; }
 .d-inline       { display: inline; }
 
+.ta-center      { text-align: center; }
+.ta-right       { text-align: right; }
+.ta-left        { text-align: left; }
+
 .w940
 {
     width: 940px;
@@ -245,10 +264,7 @@ footer, header, hgroup, menu, nav, section {
 .w300           { width: 300px; }
 .w220           { width: 220px; }
 
-.wood-bg
-{
-    background-image: url('images/header-background.jpg');
-}
+.wood-bg        { background-image: url('images/header-background.jpg'); }
 
 /* =Specifics
 ----------------------------------------------- */
@@ -257,7 +273,7 @@ header
     width: 100%;
     height: 150px;
     border-bottom: 10px solid #ffbb04;
-    margin-bottom: 165px;
+    margin-bottom: 110px;
 }
 header > .w940 > hgroup > #header-logo                      { margin-left: -123px; }
 header > .w940 > hgroup > div#header-quote                  { margin: 70px 100px 60px 0; }
@@ -273,56 +289,48 @@ header > .w940 > hgroup > #access > #menu-header-menu > li + li
     background-repeat: no-repeat;
     background-position: left center;
 }
-/* needs to be changed for launch and on different servers
------------------------------------------------ */
-.page-id-21 header > .w940 > hgroup > #access > #menu-header-menu > li#menu-item-26 a,
-header > .w940 > hgroup > #access > #menu-header-menu > li#menu-item-26 a:hover     { background-position: 0 -49px; }
-header > .w940 > hgroup > #access > #menu-header-menu > li#menu-item-26 a
-{
-    width: 51px;
-    background-position: 0 -32px;
-}
-.page-id-23 header > .w940 > hgroup > #access > #menu-header-menu > li#menu-item-25 a,
-header > .w940 > hgroup > #access > #menu-header-menu > li#menu-item-25 a:hover     { background-position: 0 -83px; }
-header > .w940 > hgroup > #access > #menu-header-menu > li#menu-item-25 a
-{
-    width: 69px;
-    background-position: 0 -66px;
-}
-.page-id-19 header > .w940 > hgroup > #access > #menu-header-menu > li#menu-item-27 a,
-header > .w940 > hgroup > #access > #menu-header-menu > li#menu-item-27 a:hover     { background-position: 0 -16px; }
-header > .w940 > hgroup > #access > #menu-header-menu > li#menu-item-27 a
-{
-    width: 116px;
-    background-position: 0 0;
-}
-/* End needs to be changed
------------------------------------------------ */
 
 header > .w940 > hgroup > #access > #menu-header-menu > li > a  
 { 
-    background-image: url('images/header-menu.png'); 
-    text-indent: -999px;
     display: block;
-    overflow: hidden;
+    font-size: 18px;
+    color: #666;
 }
+header > .w940 > hgroup > #access > #menu-header-menu > li.current_page_item > a,
+header > .w940 > hgroup > #access > #menu-header-menu > li > a:hover    { color: #000; }
+
+footer
+{
+    padding: 20px 0;
+}
+
+footer #menu-footer-menu > li               { float: left; padding: 0 5px 0 10px; }
+footer #menu-footer-menu > li + li
+{
+    background-image: url('images/menu-separator-black.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+footer #menu-footer-menu > li > a           { color: #000; }
+footer #menu-footer-menu > li > a:hover     { color: #666; }
 /* Homepage
 ----------------------------------------------- */
 .home #main #content > .article-home + .article-home           { margin-left: 20px; }
 
 /* post pages
 ----------------------------------------------- */
-#main #content > article.featured
+#main #content > article.featured               { padding-bottom: 12px; }
+#main #content > article + article              { padding-top: 20px; }
+#main #content > article.featured + article     { border-top: 1px solid #333; }
+
+/* Sidebar
+----------------------------------------------- */
+#main > #secondary > aside.widget + aside.widget
 {
-    padding-bottom: 12px;
-    border-bottom: 1px solid #333;
-}
-#main #content > article + article
-{
-    margin-top: 20px;
+    margin-top: 15px;
+    border-top: 1px #929292 solid;
+    padding-top: 20px;
 }
 
-/* Homepage
------------------------------------------------ */
 /* Homepage
 ----------------------------------------------- */

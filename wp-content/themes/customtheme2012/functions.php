@@ -174,13 +174,14 @@ function twentyeleven_widgets_init() {
 
 
 	register_sidebar( array(
-		'name' => __( 'Main Sidebar', 'twentyeleven' ),
-		'id' => 'sidebar-1',
+		'name' => __( 'Blog sidebar', 'custom' ),
+		'id' => 'sidebar-blog',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
+		'before_title' => '<h5 class="c42 oswald mb-10 uppercase">',
+		'after_title' => '</h5>'
 	) );
+    /*
 
 	register_sidebar( array(
 		'name' => __( 'Showcase Sidebar', 'twentyeleven' ),
@@ -221,6 +222,7 @@ function twentyeleven_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+    */
 }
 add_action( 'widgets_init', 'twentyeleven_widgets_init' );
 
@@ -344,5 +346,9 @@ function twentyeleven_body_classes( $classes ) {
 
 	return $classes;
 }
+
 add_filter( 'body_class', 'twentyeleven_body_classes' );
 
+
+include "inc/custom-plugins.php";
+include "inc/custom-posts.php";
