@@ -275,7 +275,7 @@ header
     border-bottom: 10px solid #ffbb04;
     margin-bottom: 110px;
 }
-header > .w940 > hgroup > #header-logo                      { margin-left: -123px; }
+header > .w940 > hgroup > #header-logo                      { margin-left: -174px; }
 header > .w940 > hgroup > div#header-quote                  { margin: 70px 100px 60px 0; }
 header > .w940 > hgroup > #access > #menu-header-menu > li  
 { 
@@ -301,7 +301,8 @@ header > .w940 > hgroup > #access > #menu-header-menu > li > a:hover    { color:
 
 footer
 {
-    padding: 20px 0;
+    padding: 60px 0 20px 0;
+    margin-top: 75px;
 }
 
 footer #menu-footer-menu > li               { float: left; padding: 0 5px 0 10px; }
@@ -315,7 +316,8 @@ footer #menu-footer-menu > li > a           { color: #000; }
 footer #menu-footer-menu > li > a:hover     { color: #666; }
 /* Homepage
 ----------------------------------------------- */
-.home #main #content > .article-home + .article-home           { margin-left: 20px; }
+.home #main #content > div.digest > .article-home + .article-home           { margin-left: 20px; }
+.home #main #content > div#top + div.digest                                 { margin-top: 60px; }
 
 /* post pages
 ----------------------------------------------- */

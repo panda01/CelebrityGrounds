@@ -16,29 +16,36 @@ get_header(); ?>
 
 		<div id="primary">
 			<div id="content" role="main">
-                <div class="w300 fleft">
-                    <?php
-                        //echo out a certain pages text
-                        the_post(); 
-                        echo '<h4 class="c666 rokkitt">' . get_the_content() . '</h4>';
-                    ?>
-                </div>
-                <div class="fright ta-center">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/television.png" />
-                </div>
-                <div class="clr"></div>
-                <?php
-                    $digest = new WP_Query( array(
-                        'post_type' => 'post',
-                        'posts_per_page' => 3
-                    ) );
-                    while ( $digest->have_posts() ) : $digest->the_post(); 
-                ?>
-                    <div class="fleft article-home w300">
-                        <?php get_template_part( 'article', 'home' ); ?>
+                <div id="top">
+                    <div class="w300 fleft">
+                        <?php
+                            //echo out a certain pages text
+                            the_post(); 
+                            echo '<h4 class="c666 rokkitt">' . get_the_content() . '</h4>';
+                        ?>
                     </div>
-				<?php endwhile; ?>
-                <div class="clr"></div>
+                    <div class="fright ta-center">
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/television.png" />
+                    </div>
+                    <div class="clr"></div>
+                </div>
+                <?php /*
+
+                <div class="digest">
+                    <?php
+                        $digest = new WP_Query( array(
+                            'post_type' => 'post',
+                            'posts_per_page' => 3
+                        ) );
+                        while ( $digest->have_posts() ) : $digest->the_post(); 
+                    ?>
+                        <div class="fleft article-home w300">
+                            <?php get_template_part( 'article', 'home' ); ?>
+                        </div>
+                    <?php endwhile; ?>
+                    <div class="clr"></div>
+                </div>
+                */ ?>
 			</div><!-- #content -->
 		</div><!-- #primary -->
 
