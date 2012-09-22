@@ -25,7 +25,7 @@ get_header(); ?>
                         ?>
                     </div>
                     <div class="fright ta-center">
-                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/television.png" />
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/truck.png" />
                     </div>
                     <div class="clr"></div>
                 </div>

@@ -80,10 +80,11 @@
                 <!-- #quote -->
                 <div id="header-quote"><img src="<?php bloginfo('template_url'); ?>/images/quote.png" /></div>
                 <nav id="access" role="navigation" class="fright">
-                    <?php wp_nav_menu( array( 
+                    <?php 
+                        /*wp_nav_menu( array( 
                         'theme_location' => 'primary',
                         'container' => ''
-                    ) ); ?>
+                    ) );*/ ?>
                 </nav><!-- #access -->
             </hgroup>
             <div class="clr"></div>
