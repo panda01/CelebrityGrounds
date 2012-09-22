@@ -215,6 +215,7 @@ nav > ul.menu > li > a  { font-family: 'Oswald', Helvetica; }
 .c42                { color: #424242; }
 .c666,
 #main p,
+.color-red:hover,
 #main a:hover       { color: #666; }
 .c999               { color: #999; }
 

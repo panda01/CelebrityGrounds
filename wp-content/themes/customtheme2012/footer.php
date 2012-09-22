@@ -18,11 +18,13 @@
                 all rights reserved &copy; copyright 2012 celebrity grounds
             </div>
             <div class="fright">
-                <?php wp_nav_menu( array( 
+                Contact: <a class="color-red" href="mailto:celebritygrounds@gmail.com">CelebrityGround[at]gmail.com</a>
+                <?php
+                /* wp_nav_menu( array( 
                     'theme_location' => 'primary',
                     'menu' => 'footer-menu',
                     'container' => ''
-                ) ); ?>
+                ) ); */ ?>
             </div>
             <div class="clr"></div>
         </div>
