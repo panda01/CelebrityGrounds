@@ -18,7 +18,7 @@
                 all rights reserved &copy; copyright 2012 celebrity grounds
             </div>
             <div class="fright">
-                Contact: <a href="mailto:contractorkizer@yahoo.com">ContractorKizer[at]yahoo.com</a>
+                Contact: <a href="mailto:celebritygrounds@gmail.com">CelebrityGrounds[at]gmail.com</a>
                 <?php
                 /* wp_nav_menu( array( 
                     'theme_location' => 'primary',
